@@ -1,0 +1,28 @@
+{% extends 'posts/base.html' %}
+{% load humanize %}
+
+
+
+
+{% block body %}
+
+<div class="card text-center">
+    <div class="card-header">
+      Author: {{ post.author }}
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">{{ post.title }}</h2>
+      <p class="card-text">{{ post.content }}</p>
+      <a href="{% url 'posts:blog_list' %}" class="btn btn-primary">Go to Blog list</a>
+    </div>
+    <div class="card-footer text-muted">
+      <span>Created at: {{ post.created_at|naturaltime }} |</span>
+      <span>Updated at: {{ post.updated_at|naturaltime }}</span>
+    </div>
+    
+  </div>
+
+
+
+{% endblock body %}
+
