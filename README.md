@@ -10,10 +10,6 @@
 $ cd BlogPost
 $ pip install -r requirements.txt
 ```
->Run
-```shell
-$ python manage.py runserver
-```
 > Create superuser to post blogs.
 ```shell
 $ python manage.py createsuperuser
