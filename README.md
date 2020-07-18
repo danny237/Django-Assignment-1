@@ -20,5 +20,5 @@ $ python manage.py createsuperuser
 ```
 > Run
 ```shell
-% python manage.py runserver
+$ python manage.py runserver
 ```
